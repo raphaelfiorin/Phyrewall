@@ -39,7 +39,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/61066188?v=4" width="100px;" alt="Foto do Marcus Castilho"/><br>
         <sub>
-          <b>Marcus Castilho</b>
+          <a href="https://github.com/c4st1lh0">Marcus Castilho</a>
         </sub>
       </a>
     </td>
