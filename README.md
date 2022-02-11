@@ -1,12 +1,10 @@
-#
+
     ██████╗ ██╗  ██╗██╗   ██╗██████╗ ███████╗██╗    ██╗ █████╗ ██╗     ██╗
     ██╔══██╗██║  ██║╚██╗ ██╔╝██╔══██╗██╔════╝██║    ██║██╔══██╗██║     ██║
     ██████╔╝███████║ ╚████╔╝ ██████╔╝█████╗  ██║ █╗ ██║███████║██║     ██║
     ██╔═══╝ ██╔══██║  ╚██╔╝  ██╔══██╗██╔══╝  ██║███╗██║██╔══██║██║     ██║
     ██║     ██║  ██║   ██║   ██║  ██║███████╗╚███╔███╔╝██║  ██║███████╗███████╗
-    ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝ 0.1
-                                                by: Raphael Fiorin & Marcus Castilho
-
+    ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝
 
 > Este projeto surgiu como um meio de automatizar tarefas que se tornam repetitivas ao fazer a manutenção de um firewall, este projeto não pretende ter fim pois conforme vai surgindo tarefas para serem automatizadas, conto com a comunidade para alimentar este projeto com outros tipos de firewalls como: Pfsense, Sonic Wall, Cisco, Mikrotik, Sophos e outros.
 
