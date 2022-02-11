@@ -49,7 +49,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 ## 😄 Seja um dos contribuidores<br>
 
-Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
+Quer fazer parte desse projeto? Faça bifurcações e alimente este projeto com mais firewalls e módulos automatizados.
 
 ## 📝 Licença
 
