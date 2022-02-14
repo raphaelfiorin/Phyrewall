@@ -1,4 +1,4 @@
-from libAll import *
+from lib import libAll
 
 # Conexão ssh
 def deauth_user_ssh():

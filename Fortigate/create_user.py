@@ -1,4 +1,4 @@
-from libAll import *
+from lib import libAll
 
 # Conexão ssh
 def create_user_ssh():

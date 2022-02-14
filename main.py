@@ -1,6 +1,8 @@
-from libAll import *
+from lib import libAll
+from Fortigate import libFg
 
-banner()
+libAll.cls()
+libAll.banner()
 menu = int(input('''
 \033[32m[1]\033[0;0m - Fortigate - Tarefas Automatizadas
 \033[31m[2]\033[0;0m - Palo alto - Cooming soon...
