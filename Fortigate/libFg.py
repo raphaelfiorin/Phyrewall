@@ -26,10 +26,10 @@ def connection ():
             pass
         elif escolha == 3:
             typeConnection = int(input("""
-\033[32m[1]\033[0;0m - Conexão SSH
-\033[32m[2]\033[0;0m - Conexão CABO CONSOLE
-\033[31m[3]\033[0;0m - Voltar ao Menu
-└> """))
+    \033[32m[1]\033[0;0m - Conexão SSH
+    \033[32m[2]\033[0;0m - Conexão CABO CONSOLE
+    \033[31m[3]\033[0;0m - Voltar ao Menu
+    └> """))
             if typeConnection == 1:
                 create_user.create_user_ssh()
             elif typeConnection == 2:
