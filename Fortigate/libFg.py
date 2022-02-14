@@ -4,11 +4,12 @@ from Fortigate import create_user
 def connection ():
     while True:
         escolha = int(input("""
-\033[32m[1]\033[0;0m - Criação de VPN
-\033[32m[2]\033[0;0m - Desautenticar User
-\033[32m[3]\033[0;0m - Criar User Admin
-\033[31m[4]\033[0;0m - Voltar ao Menu
-└> """))
+            \033[33mOptions Fortigate\033
+    \033[32m[1]\033[0;0m - Criação de VPN
+    \033[32m[2]\033[0;0m - Desautenticar User
+    \033[32m[3]\033[0;0m - Criar User Admin
+    \033[31m[4]\033[0;0m - Voltar ao Menu
+    └> """))
         if escolha == 1:
             pass
         elif escolha == 2:
