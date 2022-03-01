@@ -91,8 +91,3 @@ class fortigateFunctions():
         └> User: {nome}
         └> Tipo de user: {usertype}''')
         sleep(3)
-
-
-#[17:08, 01/03/2022] Gordin: 170.81.131.237
-#[17:08, 01/03/2022] Gordin: python
-#R89344697
