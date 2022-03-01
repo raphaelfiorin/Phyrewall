@@ -2,6 +2,52 @@ from time import sleep
 import paramiko,os
 
 class service():
+    def optionMenu():
+        while True:
+            service.cls()
+            service.banner()
+            try:
+                print('\033[33mOptions Fortigate\033\n')
+                sleep(1)
+                option = int(input("""\033[32m[1]\033[0;0m - Criação de VPN
+\033[32m[2]\033[0;0m - Desautenticar User
+\033[32m[3]\033[0;0m - Criar User Admin
+\033[31m[4]\033[0;0m - Voltar ao Menu
+ └> """))
+                if option == 1:
+                    print('\033[31mEm desenvolvimento\033[m')
+                    sleep(1)
+                    continue
+                elif option == 2:
+                    print('\033[31mEm desenvolvimento\033[m')
+                    sleep(1)
+                    continue
+                elif option == 3:
+                    service.cls()
+                    service.banner()
+                    sleep(1)
+                    print('\033[33mTipo de Conexão\033\n')
+                    sleep(1)
+                    try:
+                        op = int(input('''
+\033[32m[1]\033[0;0m - SSH
+\033[32m[2]\033[0;0m - Cabo Console
+'''))
+                        if op == 1:
+                            fortigateFunctions.create_user_ssh()
+                        elif op == 2:
+                            print('\033[31mEm desenvolvimento\033[m')
+                            sleep(1)
+                            continue
+                    except ValueError as error:
+                        print('\033[33mValor inválido!\033[m Tente novamente...\n {}'.format(error))
+                        sleep(2)
+                        continue
+
+            except ValueError as error:
+                print('\033[33mValor inválido!\033[m Tente novamente...\n {}'.format(error))
+                sleep(2)
+                continue
     def cls():
         os.system('cd C:\\Windows|cls' if os.name == 'nt' else 'clear')
 
@@ -20,10 +66,14 @@ class fortigateFunctions():
     #Aqui está instanciado TODAS as funções pertencentes ao Fortigate(FireWall)
     
     def create_user_ssh():
+        service.cls()
+        service.banner()
+        sleep(1)
         print('\n\033[32m[SSH]\033[0;0m - Estabelecendo conexão SSH ')
 
         while True:
             try:
+                sleep(1)
                 host = input('└> IP do Host: ')
                 port = int(input('└> Porta de acesso: '))
                 user = input('└> Usuário de acesso: ')

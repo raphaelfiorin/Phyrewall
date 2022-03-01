@@ -13,16 +13,10 @@ while True:
 [01] Fortigate
 \033[31m[02] Sair\033[m
  └> '''))
-
+        
         if op == 1 or op == str(op):
-            print('\n\033[34mEscolha o tipo de conexão\033[m')
             sleep(1)
-        typeConnection = int(input('''
-    [01] SSH
-    [02] Cabo Console
-    └> '''))
-        if typeConnection == 1 or typeConnection == str(typeConnection):
-            functions.fortigateFunctions.create_user_ssh()
+            functions.service.optionMenu()
         elif typeConnection == 2 or typeConnection == str(typeConnection):
             print('\033[31mEm desenvolvimento...\033[m')
             sleep(2)
