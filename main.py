@@ -23,7 +23,7 @@ while True:
             sleep(2)
             continue
         
-    except ValueError:
+    except ValueError as error:
         print('\033[33mValor inválido!\033[m Tente novamente...\n {}'.format(error))
         sleep(2)
         continue

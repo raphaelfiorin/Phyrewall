@@ -2,7 +2,7 @@ from time import sleep
 import paramiko,os
 
 class service():
-    def optionMenu():
+    def optionMenu(): #Essa função mostra um menu interativo no arquivo main.py
         while True:
             service.cls()
             service.banner()
@@ -58,10 +58,14 @@ class service():
         ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝ \033[1m\033[1;31m0.1\033[0;0m
                                                     \033[1m\033[32mby: Raphael Fiorin & Marcus Castilho\033[0;0m""")
 
+#===============================|
+#============================== |
+#============================   |
+
 class fortigateFunctions():
     #Aqui está instanciado TODAS as funções pertencentes ao Fortigate(FireWall)
     
-    def create_user_ssh():
+    def create_user_ssh(): #Essa função faz a conexão via ssh com o FireWall e mostra um menu de opções
         import getpass
         service.cls()
         service.banner()
@@ -98,7 +102,7 @@ class fortigateFunctions():
                 continue
         
         while True:
-            print('\n\033[32mCriação de Usuário\033[0;0m')
+            print('\n\033[32m','='*10,'Criação de Usuário','='*10,'\033[0;0m')
             try:
                 nome = input('└> Escolha um nome de usuário: ')
                 senha = input('└> Digite a senha: ')
