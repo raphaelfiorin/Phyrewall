@@ -6,6 +6,7 @@ class service():
         while True:
             service.cls()
             service.banner()
+            print('\033[35m\Main\Fortigate\Menu\033[m')
             try:
                 print('\033[33mOptions Fortigate\033\n')
                 sleep(1)
@@ -23,16 +24,13 @@ class service():
                     sleep(1)
                     continue
                 elif option == 3:
-                    service.cls()
-                    service.banner()
                     sleep(1)
                     print('\033[33mTipo de Conexão\033\n')
                     sleep(1)
                     try:
-                        op = int(input('''
-\033[32m[1]\033[0;0m - SSH
+                        op = int(input('''\033[32m[1]\033[0;0m - SSH
 \033[32m[2]\033[0;0m - Cabo Console
-'''))
+ └> '''))
                         if op == 1:
                             fortigateFunctions.create_user_ssh()
                         elif op == 2:
@@ -66,8 +64,10 @@ class fortigateFunctions():
     #Aqui está instanciado TODAS as funções pertencentes ao Fortigate(FireWall)
     
     def create_user_ssh():
+        import getpass
         service.cls()
         service.banner()
+        print('\033[34mMain\Fortigate\Menu\Conectar Via SSH\033[m')
         sleep(1)
         print('\n\033[32m[SSH]\033[0;0m - Estabelecendo conexão SSH ')
 
@@ -77,7 +77,7 @@ class fortigateFunctions():
                 host = input('└> IP do Host: ')
                 port = int(input('└> Porta de acesso: '))
                 user = input('└> Usuário de acesso: ')
-                password = input('└> Senha de acesso: ')
+                password = getpass.getpass('└> Senha de acesso: ', stream=None)
                 print('\033[32mConectando via SSH...\033[m')
                 
                 ssh = paramiko.SSHClient()
@@ -93,7 +93,7 @@ class fortigateFunctions():
                 continue
 
             except paramiko.AuthenticationException as error:
-                print("\033[31mErro de login: \033[0;0m" + str(err))
+                print("\033[31mErro de login: \033[0;0m")
                 sleep(1)
                 print('Tente novente...\n {}'.format(error))
                 sleep(1)

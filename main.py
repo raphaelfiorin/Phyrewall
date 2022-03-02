@@ -5,9 +5,10 @@ import functions
 while True:
     functions.service.cls()
     functions.service.banner()
+    print('\033[35m\Main\033[m')
     try:
         sleep(1)
-        print('\n\033[34mEscolha o tipo de FireWall\033[m')
+        print('\n\033[33mEscolha o tipo de FireWall\033[m')
         sleep(2)
         op = int(input('''
 [01] Fortigate
